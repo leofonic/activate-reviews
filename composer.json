@@ -1,0 +1,37 @@
+{
+    "name":        "zunderweb/activate-reviews",
+    "description": "OXID eShop: activate reviews in OXID backend",
+    "type":        "oxideshop-module",
+    "keywords":    [
+        "oxid",
+        "modules",
+        "eShop"
+    ],
+    "homepage":    "https://www.zunderweb.de",
+    "license":     [
+        "GPL-3.0",
+        "proprietary"
+    ],
+    "authors":     [
+        {
+            "name":  "zunderweb",
+            "email": "info@zunderweb.de"
+        }
+    ],
+    "extra":       {
+        "oxideshop": {
+            "target-directory": "zunderweb/activate_reviews"
+        }
+    },
+    "require":     {
+        "php": ">=5.6",
+        "oxid-esales/oxideshop-ce": "^v6.0"
+    },
+    "autoload":    {
+        "psr-4": {
+            "zunderweb\\activate_reviews\\": "../../../source/modules/zunderweb/activate_reviews"
+        }
+    }
+}
+
+
